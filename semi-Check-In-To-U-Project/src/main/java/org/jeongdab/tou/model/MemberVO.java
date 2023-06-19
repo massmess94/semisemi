@@ -1,41 +1,68 @@
 package org.jeongdab.tou.model;
 
 import java.io.Serializable;
+import java.util.Date;
 public class MemberVO implements Serializable{
-	private static final long serialVersionUID = -3972768952288329070L;
-	private String id;	
+	private long memberNo;
 	private String password;
-	private String name;
+	private String memberName;
+	private String memberEmail;
+	private Date memberBirth;
+	private int memberStatus;
 	public MemberVO() {
-		super();		
-	}
-	public MemberVO(String id, String password, String name) {
 		super();
-		this.id = id;
+	}
+	public MemberVO(long memberNo, String password, String memberName, String memberEmail, Date memberBirth,
+			int memberStatus) {
+		super();
+		this.memberNo = memberNo;
 		this.password = password;
-		this.name = name;
+		this.memberName = memberName;
+		this.memberEmail = memberEmail;
+		this.memberBirth = memberBirth;
+		this.memberStatus = memberStatus;
 	}
-	public String getId() {
-		return id;
+	public long getMemberNo() {
+		return memberNo;
 	}
-	public void setId(String id) {
-		this.id = id;
+	public void setMemberNo(long memberNo) {
+		this.memberNo = memberNo;
 	}
 	public String getPassword() {
 		return password;
 	}
-	public void setPassword(String password) {		
+	public void setPassword(String password) {
 		this.password = password;
 	}
-	public String getName() {
-		return name;
+	public String getMemberName() {
+		return memberName;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setMemberName(String memberName) {
+		this.memberName = memberName;
+	}
+	public String getMemberEmail() {
+		return memberEmail;
+	}
+	public void setMemberEmail(String memberEmail) {
+		this.memberEmail = memberEmail;
+	}
+	public Date getMemberBirth() {
+		return memberBirth;
+	}
+	public void setMemberBirth(Date memberBirth) {
+		this.memberBirth = memberBirth;
+	}
+	public int getMemberStatus() {
+		return memberStatus;
+	}
+	public void setMemberStatus(int memberStatus) {
+		this.memberStatus = memberStatus;
 	}
 	@Override
 	public String toString() {
-		return "MemberVO [id=" + id + ", password=" + password + ", name=" + name + "]";
+		return "MemberDAO [memberNo=" + memberNo + ", password=" + password + ", memberName=" + memberName
+				+ ", memberEmail=" + memberEmail + ", memberBirth=" + memberBirth + ", memberStatus=" + memberStatus
+				+ "]";
 	}
-	
+
 }
