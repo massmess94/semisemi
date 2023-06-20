@@ -1,6 +1,3 @@
-/**
- * 
- */
 function searchAddress() {
     new daum.Postcode({
         oncomplete: function (data) {

@@ -37,7 +37,6 @@
 	href="${pageContext.request.contextPath}/assets/css/cs-skin-elastic.css">
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/assets/css/style.css">
-
 <link
 	href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800'
 	rel='stylesheet' type='text/css'>
@@ -60,9 +59,13 @@
 							<label>이름</label> <input type="text" class="form-control"
 								placeholder="이름">
 						</div>
-						<div class="form-group">
-							<label>이메일</label> <input type="email" class="form-control"
-								placeholder="이메일">
+						<label>이메일</label>
+						<div class="input-group">
+							<input type="email" class="form-control" placeholder="이메일">
+						</div>
+						<div class="input-group-append">
+							<button type="button" class="btn btn-info"
+								onclick="certificationEmail()">이메일 인증하기</button>
 						</div>
 						<div class="form-group">
 							<label>비밀번호</label> <input type="password" class="form-control"
