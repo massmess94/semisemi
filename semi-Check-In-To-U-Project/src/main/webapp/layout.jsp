@@ -44,23 +44,56 @@
 <link rel="stylesheet" href="assets/css/responsive.css" />
 
 <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script
+	src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<title>봉사 구인 게시판</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+	rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+	rel="stylesheet">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+	rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link
+	href="${pageContext.request.contextPath}/board/assets/lib/animate/animate.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/board/assets/lib/owlcarousel/assets/owl.carousel.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/board/assets/lib/lightbox/css/lightbox.min.css"
+	rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link
+	href="${pageContext.request.contextPath}/board/assets/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link
+	href="${pageContext.request.contextPath}/board/assets/css/style.css"
+	rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse" data-offset="100">
 	<div class="container-fluid pt-3">
 
 
-		<!-- Preloader -->
-		<div id="loading">
-			<div id="loading-center">
-				<div id="loading-center-absolute">
-					<div class="object" id="object_one"></div>
-					<div class="object" id="object_two"></div>
-					<div class="object" id="object_three"></div>
-					<div class="object" id="object_four"></div>
-				</div>
-			</div>
-		</div>
-		<!--End off Preloader 페이지 실행되면 그 앞에 네모열리는 효과-->
+	
 
 		<div class="culmn">
 
@@ -72,62 +105,82 @@
 				</div>
 			</div>
 			<%-- main 영역 --%>
-			<div class="row">
-
-				<!--Home Sections-->
-
-				<section id="home" class="home bg-black fix">
-					<div class="overlay"></div>
-					<div class="container">
-						<div class="row">
-							<div class="main_home text-center">
-								<div class="col-md-12">
-									<div class="hello">
-										<div class="slid_item">
-											<div class="home_text ">
-												<h1 class="text-yellow">CHECK IN FOR U</h1>
-												<h3 class="text-white text-uppercase">when is your
-													flight to?</h3>
-											</div>
-										</div>
-										<!-- End off slid item -->
-									</div>
-								</div>
-							</div>
-							<a class="mouse-scroll" href="#about"> <span class="mouse">
-									<span class="mouse-movement"></span>
-							</span> <span class="mouse-message fadeIn">이동봉사하러가기!</span> <br />
-
-							</a>
-
-						</div>
-						<!--End off row-->
-					</div>
-					<!--End off container -->
-				</section>
-				<!--End off Home Sections-->
-
-
-
-				<!--About Section-->
-				<section id="about" class="about bg-yellow roomy-80">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="main_about text-center">
-									<h3 class="text-black">WE LOVE DOG!</h3>
-									<h2 class="text-white">- & -</h2>
-									<h3 class="text-black text-uppercase">WE LOVE DOG! Adopt a
-										dog rather than buying one.</h3>
-
-									<a href="" class="btn btn-primary m-top-100">apply
-										volunteer!</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+				<div class="container-xxl py-5">
+		<div class="container">
+			<div class="text-center mx-auto mb-5 wow fadeInUp"
+				data-wow-delay="0.1s" style="max-width: 600px;">
+				<h1 class="display-6 mb-4">봉사 구인 게시판</h1>
 			</div>
+			<div class="row g-4">
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+					<a class="service-item d-block rounded text-center h-100 p-4"
+						href="#"> <img class="img-fluid rounded mb-4"
+						src="${pageContext.request.contextPath}/board/assets/img/service-1.jpg"
+						alt="">
+						<h4 class="mb-0">봉사 구인 합니다</h4>
+						<div>
+							<h6 class="mb-0">박해준&nbsp;&nbsp;2023-06-20</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+					<a class="service-item d-block rounded text-center h-100 p-4"
+						href="#"> <img class="img-fluid rounded mb-4"
+						src="${pageContext.request.contextPath}/board/assets/img/service-1.jpg"
+						alt="">
+						<h4 class="mb-0">봉사 구인 합니다</h4>
+						<div>
+							<h6 class="mb-0">박해준&nbsp;&nbsp;2023-06-20</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+					<a class="service-item d-block rounded text-center h-100 p-4"
+						href="#"> <img class="img-fluid rounded mb-4"
+						src="${pageContext.request.contextPath}/board/assets/img/service-1.jpg"
+						alt="">
+						<h4 class="mb-0">봉사 구인 합니다</h4>
+						<div>
+							<h6 class="mb-0">박해준&nbsp;&nbsp;2023-06-20</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+					<a class="service-item d-block rounded text-center h-100 p-4"
+						href="#"> <img class="img-fluid rounded mb-4"
+						src="${pageContext.request.contextPath}/board/assets/img/service-1.jpg"
+						alt="">
+						<h4 class="mb-0">봉사 구인 합니다</h4>
+						<div>
+							<h6 class="mb-0">박해준&nbsp;&nbsp;2023-06-20</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+					<a class="service-item d-block rounded text-center h-100 p-4"
+						href="#"> <img class="img-fluid rounded mb-4"
+						src="${pageContext.request.contextPath}/board/assets/img/service-1.jpg"
+						alt="">
+						<h4 class="mb-0">봉사 구인 합니다</h4>
+						<div>
+							<h6 class="mb-0">박해준&nbsp;&nbsp;2023-06-20</h6>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+					<a class="service-item d-block rounded text-center h-100 p-4"
+						href="#"> <img class="img-fluid rounded mb-4"
+						src="${pageContext.request.contextPath}/board/assets/img/service-1.jpg"
+						alt="">
+						<h4 class="mb-0">봉사 구인 합니다</h4>
+						<div>
+							<h6 class="mb-0">박해준&nbsp;&nbsp;2023-06-20</h6>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 			<%--footer 영역 --%>
 			<div class="row">
 				
